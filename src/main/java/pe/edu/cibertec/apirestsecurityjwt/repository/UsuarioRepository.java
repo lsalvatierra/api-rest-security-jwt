@@ -21,5 +21,6 @@ public interface UsuarioRepository extends
     List<String> getRolesByNomusuario(
             @Param("nomusuario") String nomusuario);
 
-
+    boolean existsByNomusuario(String nomusuario);
+    boolean existsByEmail(String email);
 }
